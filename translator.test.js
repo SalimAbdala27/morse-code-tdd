@@ -26,7 +26,7 @@ test('should return .... .. ', () => {
 test('should return ... .- .-.. .. -- ', () => {
   let result;
   const outcome = "... .- .-.. .. --";
-  result = translateToMorse("Salim")
+  result = translateToMorse("Salim") 
   expect(result).toBe(outcome);
 })
 

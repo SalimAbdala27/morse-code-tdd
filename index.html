@@ -5,14 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
   <title>Morse Code Translator</title>
 </head>
 <body>
-  <header class="heading"> Morse Code Translator </header>
-  <input type="text" class="inputEng">
-  <button type="submit" class="engToMorse"> Submit </button>
-  <div class="morseCode">
-    
+  <div class="header">
+    <header class="heading animate__animated animate__bounce"> Morse Code Translator </header>
+  </div>
+  <div class="main">
+    <input type="text" class="inputEng animate__animated animate__fadeIn">
+    <button type="submit" class="engToMorse animate__animated animate__tada"> Translate </button>
+    <div class="morseCode">
+      
+    </div>
   </div>
   <script src="./translator.js"></script>
   <script src="./app.js"></script>

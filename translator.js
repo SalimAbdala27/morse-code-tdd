@@ -4,7 +4,7 @@
 // Using object key value pairs to link letters/numbers to morse
 
 // export
-export const englishToMorseObj = {
+const englishToMorseObj = {
   "a": ".-",
   "b": "-...",
   "c": "-.-.",
@@ -40,11 +40,12 @@ export const englishToMorseObj = {
   "6": "-....",
   "7": "--...",
   "8": "---..",
-  "9": "----."
+  "9": "----.",
+  " ": "/"
 }
 
 //export
-export const translateToMorse = (string) => {
+const translateToMorse = (string) => {
   const everythingToLowerCase = string.toLowerCase();
   return everythingToLowerCase.split("").map(element => {
     return englishToMorseObj[element]
